@@ -1,28 +1,25 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div id="app" class="mx-5 my-2">
+    <b-sidebar fullheight v-model="sidebarActive">
+      <b-menu class="p-4">
+        <b-menu-list label="Menú">
+          <b-menu-item tag="router-link" :to="{name:'home'}" label="Inicio"></b-menu-item>
+          <b-menu-item tag="router-link" :to="{name:'registrar'}" label="Registrar"></b-menu-item>
+        </b-menu-list>
+      </b-menu>
+    </b-sidebar>
+    <b-button icon-left="bars" @click="sidebarActive=!sidebarActive"></b-button>
+    <router-view />
   </div>
 </template>
-
+<script>
+export default {
+  data() {
+    return {
+      sidebarActive: false,
+    };
+  },
+};
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

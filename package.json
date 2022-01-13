@@ -14,6 +14,7 @@
     "axios": "^0.24.0",
     "buefy": "^0.9.0",
     "core-js": "^3.6.5",
+    "odoo-xmlrpc": "^1.0.8",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0"
@@ -27,6 +28,8 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "sass": "^1.48.0",
+    "sass-loader": "^10.2.0",
     "vue-cli-plugin-buefy": "~0.3.8",
     "vue-cli-plugin-fontawesome": "~0.3.1",
     "vue-template-compiler": "^2.6.11"
